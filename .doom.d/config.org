@@ -1,0 +1,13 @@
+#+TITLE: Doom Emacs Configuration
+#+AUTHOR: Colin Allen
+#+DATE: 4/3/2022
+
+#+begin_src emacs-lisp
+(map! :leader
+      (:prefix ("c h" . "Help info from Clippy")
+       :desc "Clippy describes function under pointer" "f" #'clippy-describe-function
+       :desc "Clippy describes variables under pointer" "v" #'clippy-describe-variable))
+#+end_src
+
+#+RESULTS:
+: clippy-describe-variable
